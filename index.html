@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <title>Myles Recny</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="menu">
+        <span data-action="code" class="menu-item">CODE</span>
+        <span data-action="blog" class="menu-item">BLOG</span>
+        <span data-action="study" class="menu-item">STUDY</span>
+        <span data-action="cntct" class="menu-item">CNTCT</span>
+      </div>
+      <div class="explain">
+        <div class="explain-content">
+          <p>Hi, I'm Myles</p>
+          <p><img class="photo" src="./prof_blog.jpg" /></p>
+          I write programs that live on the web 
+          <p>I work at <a target=blank href="http://shelby.tv">Shelby</a>, study at NYU, live in Brooklyn and have grown up in Sydney</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  var clickCallbacks = {
+    code : function(){
+      $('.explain-content').html($('#code-template').html());
+    },
+    cntct : function(){
+      $('.explain-content').html($('#email-template').html());
+    },
+    blog : function(){
+      window.open('http://blog.mkrecny.com', '_blank');
+    },
+    study : function(){
+      $('.explain-content').html($('#study-template').html());
+    }
+  };
+  $('.menu-item').each(function(i, el){
+    $(el).click(function(){
+      clickCallbacks[$(el).data('action')]();
+    });
+  });
+</script>
+<script type="text/template" id="code-template">
+  <p>Mostly, I write node.js and backbone.js for <a href="http://shelby.tv">Shelby</a></p>
+  <p>I have some code on <a target=blank href="http://github.com/mkrecny">github</a></p>
+  <p>I built <a target=blank href="http://uberzet.com">uberzet</a>, 
+    <a target=blank href="http://xox.fm">xox.fm</a>, <a target=blank href="http://gigli.st">gigli.st</a>, 
+    <a target=blank href="http://goo.gl/zOcNf">2D Universe Factory</a>,
+    <a target=blank href="http://snowisfalling.com">Snow is Falling</a>,
+    <a target=blank href="http://sweaxis.org">SWE Axis</a>
+    and some others in my spare time.
+</script>
+<script type="text/template" id="email-template">
+  <p>Write me at mkrecny@gmail</p>
+  <p>Find me on twitter at <a target=blank href="http://twitter.com/recborg">@recborg</a></p>
+  <p>I'm rborg on freenode (irc)</p>
+  <p>I'd love to chat : )</p>
+</script>
+<script type="text/template" id="study-template">
+  <p>I'm a part-time graduate student at <a target=blank href="http://gallatin.nyu.edu/">NYU Gallatin</a></p>
+  <p>Gallatin allows me to build my own masters from any class in any department of NYU</p>
+  <p>I'm studying Computer Science, <a target=blank href="http://itp.nyu.edu/itp/">ITP</a> and just about anything else that interests me</p>
+  <p>I'll be documenting my studies here soon</p>
+</script>
+
+
+<style>
+  .content{
+    margin:0px auto;
+    margin-top:100px;
+    width:800px;
+    height:500px;
+    text-align:center;
+    font-family:helvetica, arial, sans-serif;
+  }
+  .menu{
+    font-weight:200;
+    float:left;
+    height:100%;
+    width:49%;
+  }
+  .explain{
+    font-weight:200;
+    float:right;
+    height:100%;
+    width:49%;
+  }
+  .explain-content{
+    font-size:27px;
+  }
+  .menu-item{
+    cursor:pointer;
+    font-size:100px;
+    width:100%;
+  }
+  .menu-item:hover{
+    color:#F6F792;
+  }
+  .photo{
+    border:3px solid #F6F792;
+    height:120px;
+  }
+</style>
