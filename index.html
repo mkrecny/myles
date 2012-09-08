@@ -6,16 +6,16 @@
   <body>
     <div class="content">
       <div class="menu">
-        <span data-action="code" class="menu-item">CODE</span>
-        <span data-action="blog" class="menu-item">BLOG</span>
+        <span data-action="code" class="menu-item">BUILD</span>
+        <span data-action="blog" class="menu-item">WRITE</span>
         <span data-action="study" class="menu-item">STUDY</span>
-        <span data-action="cntct" class="menu-item">CNTCT</span>
+        <span data-action="cntct" class="menu-item">CNNCT</span>
       </div>
       <div class="explain">
         <div class="explain-content">
           <p>Hi, I'm Myles</p>
           <p><img class="photo" src="./prof_blog_dark.jpg" /></p>
-          I write programs that live on the web 
+          I make things that live on the web 
           <p>I work at <a target=blank href="http://shelby.tv">Shelby</a>, study at NYU, live in Brooklyn and have grown up in Sydney</p>
         </div>
       </div>
@@ -32,7 +32,7 @@
       $('.explain-content').html($('#email-template').html());
     },
     blog : function(){
-      window.open('http://blog.mkrecny.com', '_blank');
+      $('.explain-content').html($('#blog-template').html());
     },
     study : function(){
       $('.explain-content').html($('#study-template').html());
@@ -45,19 +45,26 @@
   });
 </script>
 <script type="text/template" id="code-template">
-  <p>Mostly, I write node.js and backbone.js for <a href="http://shelby.tv">Shelby</a></p>
-  <p>I have some code on <a target=blank href="http://github.com/mkrecny">github</a> (including <a href="http://github.com/mkrecny/myles">this site</a>)</p>
-  <p>I built <a target=blank href="http://uberzet.com">uberzet</a>, 
+  
+  <p>I'm building the future of TV with <a href="http://shelby.tv">ShelbyTV</a></p>
+  <p>
+    I'm also working on <a target=blank href="http://uberzet.com">uberzet</a>, 
     <a target=blank href="http://xox.fm">xox.fm</a>, <a target=blank href="http://gigli.st">gigli.st</a>, 
     <a target=blank href="http://goo.gl/zOcNf">2D Universe Factory</a>,
     <a target=blank href="http://snowisfalling.com">Snow is Falling</a>,
     <a target=blank href="http://sweaxis.org">SWE Axis</a>
     and some others in my spare time.
+  </p>
+  <p>I have some unimpressive code on <a target=blank href="http://github.com/mkrecny">github</a> (including <a href="http://github.com/mkrecny/myles">this site</a>)</p>
+</script>
+<script type="text/template" id="blog-template">
+  <p>I maintain an <a href="http://blog.mkrecny.com">infrequently updated blog</a></p>
 </script>
 <script type="text/template" id="email-template">
   <p>Write me at mkrecny@gmail</p>
   <p>Find me on twitter at <a target=blank href="http://twitter.com/recborg">@recborg</a></p>
-  <p>I'd love to chat : )</p>
+  <p>Meet me during my <a href="http://ohours.org/recborg">office hours<a>
+  <p>I'd love to chat.</p>
 </script>
 <script type="text/template" id="study-template">
   <p>I'm a part-time graduate student at <a target=blank href="http://gallatin.nyu.edu/">NYU Gallatin</a></p>
