@@ -7,8 +7,8 @@
     <div class="content">
       <div class="menu">
         <span data-action="study" class="menu-item">INFO</span>
-        <span data-action="blog" class="menu-item">RCNT</span>
         <span data-action="code" class="menu-item">HIRE</span>
+        <span data-action="blog" class="menu-item">RCNT</span>
         <span data-action="cntct" class="menu-item">CNTCT</span>
       </div>
       <div class="explain">
@@ -42,9 +42,11 @@
       $('.explain-content').html($('#study-template').html());
     }
   };
-  $('.menu-item').each(function(i, el){
-    $(el).click(function(){
-      clickCallbacks[$(el).data('action')]();
+  $(document).ready(function(){
+    $('.menu-item').each(function(i, el){
+      $(el).click(function(){
+        clickCallbacks[$(el).data('action')]();
+      });
     });
   });
 </script>
