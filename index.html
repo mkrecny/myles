@@ -1,19 +1,21 @@
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>-->
+    <script src="/jquery-1.6.min.js"></script>
     <title>Myles Recny</title>
   </head>
   <body>
     <div class="content">
       <div class="menu">
         <span data-action="study" class="menu-item">INFO</span>
+
+        <span data-action="blog" class="menu-item">NOW</span>
         <span data-action="code" class="menu-item">HIRE</span>
-        <span data-action="blog" class="menu-item">RCNT</span>
-        <span data-action="cntct" class="menu-item">CNTCT</span>
+        <span data-action="cntct" class="menu-item">TALK</span>
       </div>
       <div class="explain">
         <div class="explain-content">
-          <div style="margin-top:90px">Hi, I'm Myles</div>
+          <div style="margin-top:76px">Hi, I'm Myles</div>
           <p><img class="photo" src="./prof_blog_dark.jpg" /></p>
           <p>I engineer high-impact outcomes for brands.</p>
         </div>
@@ -51,24 +53,22 @@
   });
 </script>
 <script type="text/template" id="code-template">
-  <p>
-    For <i>$4000</i> a week I offer the following 
+  <p style="margin-top:65px">
+    I <i>prototype</i> products and experiences. 
+    I <i>optimize</i> via rigorous AB-testing. 
+    I <i>leverage</i> social networks to drive user acquisition. 
+    I <i>define</i> SEO strategies focused around dynamic content.
+    I <i>generate</i> insights from your data.
   </p>
   <p>
-    <ol>
-      <li>Rigorous <i>AB Testing</i> of your brands' twitter profile</li>
-      <li>Precision <i>targeting and engagment</i> of your desired audience (twitter)</li>
-      <li>Data-driven optimization of <i>twitter strategy</i></li>
-      <li>Beautiful summary reports</li>
-    </ol>
+    mkrecny@gmail for rates & availability
   </p>
-  <p>Contact mkrecny [at] gmail<p>
 </script>
 <script type="text/template" id="blog-template">
   <p style="margin-top:100px">Most recently I wrote:
   <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">"Be nice to programmers"</a></p>
-  <p><a href="http://github.com/mkrecny">My Github</a></p>
   <p>I've been focusing on <a href="http://followgen.com">Followgen</a>, a SaaS marketing product.</p>
+  <p><a href="http://github.com/mkrecny">my github</a></p>
 </script>
 <script type="text/template" id="email-template">
   <p style="margin-top:100px">mkrecny@gmail</p>
@@ -77,15 +77,24 @@
   <p>I'd love to chat.</p>
 </script>
 <script type="text/template" id="study-template">
-  <p style="margin-top:70px">I've worked as a Software Engineer at <a href="http://techstars.org">TechStarsNYC</a>, <a href="http://klicknation.com">Klicknation</a>, 
+  <p style="margin-top:50px">I've worked as a Software Engineer at <a href="http://techstars.org">TechStarsNYC</a>, <a href="http://klicknation.com">Klicknation</a>, 
     <a href="http://shelby.tv">Shelby</a> and I founded <a href="http://followgen.com">Followgen</a></p>
   <p>I've also been a management consultant at <a href="http://lek.com">LEK Consulting</a>
-  <p>I'm a part time grad student at NYU,
+  <p>I have a BA in Philosophy from Duke and I'm a part time grad student at NYU,
     <a href="http://edu.mkrecny.com">studying Complex Systems</a></p>
 </script>
 
 
 <style>
+  a{
+    color:#151515;
+    opacity:0.9;
+    font-weight:100;
+    text-decoration:none;
+  }
+  a:hover{
+    opacity:1;
+  }
   .content{
     margin:0px auto;
     margin-top:100px;
@@ -123,8 +132,9 @@
     color:#F6F792;
   }
   .photo{
-    border:1px solid black;
+    opacity:0.9;
     border:3px solid #F6F792;
-    height:120px;
+    height:160px;
   }
+
 </style>
