@@ -12,7 +12,7 @@ h1, h2, .nav-link, .playlist-btn {
 h1 {font-size:48px; }
 h1, h2, h3, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
 p { line-height:1.4;  }
-a { color:#fff; font-style:italic; }
+a { color:#fff; }
 blockquote { 
 	background:#fff; 
 	margin:0 0 20px;
@@ -59,7 +59,7 @@ pre {
 	position:absolute;
   right:0;
   top:0;
-  width:27%;
+  width:320px;
   height:100%
 	-webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
 }
